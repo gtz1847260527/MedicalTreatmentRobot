@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/beijing_one">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dip"
+        android:layout_marginTop="50dip"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/shape_white_trans_bg"
+        android:orientation="vertical"
+        android:padding="80dip">
+
+        <ImageView
+            android:id="@+id/iv_jiankang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/jiankang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="460dip"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/expensive_gift_healthy"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="hello哇,树先生"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginBottom="-20dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/bottom_flow" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="150dp"
+            android:src="@mipmap/main_woman" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:drawableRight="@mipmap/kaishijiance"
+        android:drawablePadding="20dip"
+        android:text="开始检测"
+        android:textColor="#585CE5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginRight="130dp"
+        android:textSize="25sp" />
+
+</RelativeLayout>

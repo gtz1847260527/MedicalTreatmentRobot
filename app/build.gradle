@@ -1,0 +1,85 @@
+plugins {
+    id 'com.android.application'
+    id 'com.chaquo.python'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+
+        python {
+            // 指定python路径
+            buildPython "C:/Users/Administrator/AppData/Local/Programs/Python/Python38/python.exe"
+            buildPython "C:/Windows/py.exe", "-3.8"
+
+        }
+
+        sourceSets {
+            main {
+                python{
+                    srcDir "src/main/python"
+                }
+            }
+        }
+
+
+        python {
+            pip {
+//                options "--index-url", "https://mirrors.aliyun.com/pypi/simple/"
+//                options "--extra-index-url", "https://pypi.mirrors.ustc.edu.cn/simple/"
+                install "numpy"
+                install "scipy"
+//                install "traceback"
+                install "pywavelets"
+//                install "wfdb"
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+/*
+
+    sourceSets {
+        python {
+            srcDirs = ["src/main/python"]
+        }
+    }
+*/
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+}

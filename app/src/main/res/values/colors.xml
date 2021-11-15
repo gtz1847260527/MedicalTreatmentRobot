@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="search_text_color">#FFA2ACCF</color>
+    <color name="color_3">#333333</color>
+    <color name="color_6">#FF666666</color>
+    <color name="color_9">#FF999999</color>
+
+    <color name="RoundFillColor">#45C3E5</color>
+
+    <color name="lineFillColor">#FF60BCFF</color>
+    <color name="translate">#00000000</color>
+    <color name="health_before_color">#FFA2ACCF</color>
+    <color name="health_after_color">#666666</color>
+    <color name="data_time_color">#FF8695EA</color>
+    <color name="calendar_time_color">#FFFF7D5F</color>
+    <color name="temperature_color">#FFA7D2FC</color>
+    <color name="notice_info_color">#FF2ECC71</color>
+
+    <color name="time_title_color">#FF5C4EBD</color>
+    <color name="select_default_color">#FFAEAEAE</color>
+
+    <color name="blood_check_item_color">#FF9DA1EE</color>
+
+    <color name="big_line">#CCCCCC</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+
+    <color name="colorTextBefore">#FF9DA1EF</color>
+    <color name="checkProgress">#FFFCA992</color>
+
+    <color name="checkResultNumber">#FF6D71F9</color>
+    <color name="checkResultTendency">#FF837AA9</color>
+    <color name="checkResultName">#FF232F62</color>
+
+    <color name="checkProjectPoint">#FF8171CC</color>
+
+    <color name="cut_line">#FFD1D8F1</color>
+    <color name="project_presentation">#FFFD8637</color>
+    <color name="matters_needing_attention">#FFFA271F</color>
+
+    <color name="first_project">#FF7E7DC4</color>
+    <color name="history_line">#FF585CE5</color>
+    <color name="history_item_line">#FF7E7DC6</color>
+    <color name="history_item_dotted_line">#FF707070</color>
+    
+    <color name="alert_cancel_text">#FF7C7EC6</color>
+
+    <color name="look_more_detail_bg">#FFEDEFFE</color>
+
+    <color name="check_change_type_bg">#FFD6D1EF</color>
+
+
+</resources>
